@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistance — Dashboard Dolibarr</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .app-label {
+      font-size: 13px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .faq-item {
+      border-top: 1px solid #eee;
+      padding: 1rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid #eee;
+    }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 0.35rem;
+    }
+
+    .faq-a {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .contact-card {
+      background: #f7f7f7;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: #e8f0fe;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: #2d6be4;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact-text p {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-text a {
+      font-size: 15px;
+      font-weight: 500;
+      color: #2d6be4;
+      text-decoration: none;
+    }
+
+    .contact-text a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 2.5rem 0;
+    }
+
+    footer {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 2rem 1.25rem; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <p class="app-label">Assistance</p>
+    <h1>Dashboard Dolibarr</h1>
+    <p class="tagline">Consultez vos données Dolibarr depuis votre iPhone.</p>
+
+    <section>
+      <h2>Questions fréquentes</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">L'application ne se connecte pas à mon Dolibarr.</p>
+        <p class="faq-a">Vérifiez que l'URL de votre instance est correcte (ex. : https://mon-dolibarr.com) et que l'API REST est activée dans Dolibarr (Configuration → API). Assurez-vous également que votre clé API est valide.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Où trouver ma clé API Dolibarr ?</p>
+        <p class="faq-a">Dans Dolibarr, allez dans votre profil utilisateur → onglet API/Services web. Générez ou copiez votre clé API depuis cet écran.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Les données affichées ne sont pas à jour.</p>
+        <p class="faq-a">Tirez vers le bas sur le tableau de bord pour forcer un rafraîchissement. Les données sont chargées en temps réel depuis votre instance Dolibarr.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">L'application collecte-t-elle mes données ?</p>
+        <p class="faq-a">Non. L'application n'envoie aucune donnée à des serveurs tiers. Vos données transitent uniquement entre votre appareil et votre propre instance Dolibarr. Consultez notre <a href="privacy-policy.html">politique de confidentialité</a> pour plus de détails.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nous contacter</h2>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div class="contact-text">
+          <p>Pour toute question ou problème</p>
+          <a href="mailto:erik.pourtau@gmail.com">erik.pourtau@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <footer>
+      <a href="privacy-policy.html">Politique de confidentialité</a>
+    </footer>
+
+  </div>
+</body>
+</html>
